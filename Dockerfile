@@ -4,7 +4,7 @@ USER root
 
 RUN apk add --no-cache -U jq perl nodejs py3-pip
 
-RUN pip3 install --no-cache-dir 'Jinja2<3.1' envtpl
+RUN pip3 install --no-cache-dir 'Jinja2<3.1' envtpl yq
 
 COPY entrypoint.sh /
 COPY config.json.tpl /
